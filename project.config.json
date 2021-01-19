@@ -12,7 +12,7 @@
     "minified": true,
     "newFeature": false,
     "coverView": true,
-    "nodeModules": false,
+    "nodeModules": true,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
@@ -38,6 +38,13 @@
     "packNpmRelationList": [],
     "minifyWXSS": true
   },
+  "packNpmManually": true,
+  "packNpmRelationList": [
+    {
+      "packageJsonPath": "./package.json",
+      "miniprogramNpmDistDir": "./"
+    }
+  ],
   "compileType": "miniprogram",
   "libVersion": "2.14.4",
   "appid": "wx61143160fd3be911",

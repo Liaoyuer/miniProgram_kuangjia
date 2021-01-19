@@ -1,6 +1,13 @@
 // app.js
 App({
-  core: require("./utils/core.js"),
+  is_on_launch: !0,
+    // siteInfo: require("siteinfo.js"),
+    // api: require("api.js"),
+    core: require("./utils/core.js"),
+    globalData: {
+        back: !1,
+        statusBarHeight:wx.getSystemInfoSync()['statusBarHeight'], // 获取导航栏的高度
+    },
   onLaunch() {
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
